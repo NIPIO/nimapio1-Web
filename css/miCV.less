@@ -1,0 +1,187 @@
+@import "boostrapespecial.css";
+@import "porfolio.css";
+@import "experiencia.css";
+@import "variables.less";
+@import "efectoResumen.less";
+
+*{margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+	height: auto;
+	width: 100%;
+	font-family: 'Heebo', sans-serif;
+	background-color: @fondo;	
+}
+
+h1,h3,h5 {
+	.colorLetra;
+	.letra;
+
+}
+
+h1 {	
+	font-size: 46px;
+	margin-left: 12%;
+	margin-top: 4%;
+	margin-bottom: 1%;
+	font-weight: bold;
+}
+
+
+h3 {
+	margin-top: -25px;
+}
+
+h3, h5 {
+	margin-left: 12%;
+	letter-spacing: -1px;
+}
+
+
+
+#imagen  {
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: 14%;
+	margin-top: 6%;
+	
+	 img {
+		width: 100%;
+		height: 185%;
+		margin-top: 15%;	
+		border-radius: 260px;	}
+		
+		}
+
+
+#texto1 {
+	width: 35%;
+	height: 5%;
+	margin-right: 17%;
+	.floatR;
+
+	h2 {
+	.letra;
+	font-size: 63px;
+	.colorLetra;
+	margin-top: 3%;
+	margin-bottom: -3%;
+	font-weight: bold;
+		}
+
+	h4 {
+	font-size: 38px;
+	.colorLetra
+		}
+}
+
+
+#parrafo {
+	position: relative;
+	width: 35%;
+	height: 5%;
+	margin-top: 3%;
+	margin-right: 17%;
+	.floatR;
+	z-index: 3;
+
+	div {
+			width: 29%;
+			height: 8.5rem;
+			border-radius: 100px;	
+			.inline;
+			justify-content: center;
+			transition: 0.8s;	
+
+					}
+
+		a {	margin-top: 40%;
+			.colorLetra;
+			text-decoration: none;
+			font-variant: small-caps;
+			font-size: 15px;
+			}
+		p {	text-align: right; 	.colorLetra; }
+
+ }
+
+
+#miresumen 			{background-color: #1dd1a1; }
+#experiencia	 	{background-color: #01a3a4; }
+#habilidades 		{background-color: #ff6b6b; }
+
+#miresumen:hover, #habilidades:hover, #experiencia:hover 	{.hoverCirculos}
+
+
+#descripcion {
+	width: 70%;
+	height: 40%;
+	margin: 2% 0% 5% 12%;
+				h3 {
+					margin: 30px;
+					letter-spacing: -1px;
+					text-decoration: underline;
+					}
+
+				mark, ul li {	background-color: lightgrey;	}
+				ul li {	margin-left: 5%; }
+				h4 {	
+					letter-spacing: -1px;
+					margin-left: 10%;
+					color:#7bb77f
+					}
+				h5 {
+					margin-left: 45%;
+					margin-top: 3%;
+					text-decoration: overline;
+					}
+			}
+
+#boton img{
+	width: 60px;
+	height: 60px;
+	position: absolute; 
+	position: fixed; 
+	color: white;
+	right: 3%; 
+	bottom: 10%; 
+	cursor: pointer; 
+}
+
+.center {
+	margin-left: 5%;
+}
+
+
+/*EFECTOS HABILIDADES*/
+	#contenedorHab {
+		height: auto;
+		width: 70%;
+		margin-left: 10%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.circu {
+		position: relative;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		margin: 0px 30px;
+	}
+
+	#interior {
+		.tamano;
+		background-color: @fondo;
+		transform: rotate(-90deg);
+		line-height: 150px;
+	}
+
+	#interiorAbajo {
+		.tamano;
+		line-height: 230px;
+		background: linear-gradient(transparent 50%, @fondo 50%);
+	}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="shortcut icon" href="images/logo.ico">
+</head>
+<body>
+	
+
+
+<script>
+
+function celular(){	
+	$("#prueba").css("display", "inline-block")  }		 
+function email(){	
+	$("#prueba1").css("display", "inline-block")  }
+function telefono(){	
+	$("#prueba2").css("display", "inline-block")  }
+function gmail(){	
+	$("#prueba3").css("display", "inline-block")  }
+
+function Mouseva() {
+	$("#prueba").css("display", "none")  }
+function Mouseva1() {
+	$("#prueba1").css("display", "none")  }
+function Mouseva2() {
+	$("#prueba2").css("display", "none")  }
+function Mouseva3() {
+	$("#prueba3").css("display", "none")  }
+
+
+</script>	
+
+	<div class="social">
+		<ul id="social">
+			<li><a href="mailto:nmpiovano@gmail.com" class="icon-google-plus"  onmouseenter="gmail()" onmouseleave="Mouseva3()"><p id="prueba3">nmpiovano@gmail.com</p></a></li>
+			<li><a href="contacto.html" class="icon-phone" onmouseenter="telefono()" onmouseleave="Mouseva2()"><p id="prueba2">1130396445</p></a></li>
+			<li><a href="contacto.html" class="icon-skype" onmouseenter="email()" onmouseleave="Mouseva1()"><p id="prueba1">nmpiovano@hotmail.com</p></a></li>
+			<li><a href="contacto.html" class="icon-whatsapp" onmouseenter="celular()" onmouseleave="Mouseva()"><p id="prueba">+54 1530396445</p></a></li>
+		</ul>
+	</div>
+</body>
+</html>

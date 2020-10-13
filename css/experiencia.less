@@ -1,0 +1,42 @@
+
+	#DivLogos {
+		height: 120px;
+		width: 800px;
+		margin-top: 16%;
+		margin-left: 10%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logos {
+		z-index: 5;
+		min-width: 100px;
+		height: 100px;
+	   	box-shadow: 3px 3px 11px #4c4c4a;
+	   	border-radius: 50px;
+
+    		img {
+    			width: 100px;
+    			height: 100px;
+    		}
+			&:hover {
+				cursor: pointer;
+			}
+
+			&:active{
+				box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .4);
+			}
+			
+
+		} 
+	#info {
+		min-height: 200px;
+		width: 800px;
+		margin-left: 10%;
+
+	}
+
+	#infoConsultorio, #infoKyrios, #infoDaemo, #infoMovistar, #infoColombia {
+		display: none
+	}
+

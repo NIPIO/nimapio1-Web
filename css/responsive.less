@@ -1,0 +1,316 @@
+@media (max-width: 1024px) and (orientation: landscape) {
+
+		/*INDEX*/
+		h1, h3, #imagen {
+			margin-left: 8%;
+		}
+		h2,h4, #social {
+			display: none;
+		}
+	
+		#parrafo {
+			position: absolute;
+			float: none;
+			display: inline;
+			margin-top: 5%;
+			margin-left: 1%;
+			width: 41%;
+			div {
+				width: 32%;
+				height: 8.5rem;
+			}
+			p {
+				text-align: left;
+				width: 100%;
+				float: none;
+			}
+		}
+		#imagen {
+			margin-top: 0%;
+		}
+		/*EXPERIENCIA Y EDUCACION*/
+		#DivLogos {
+			width: 90%;
+			margin-top: 10%;
+		}
+		#descripcion {
+			    margin: 2% 0% 5% 7%;
+		}
+		#info {
+			width: 90%;
+		}
+		/*HABILIDADES*/
+		#contenedorHab {
+			display: flex;
+			justify-content: flex-start;
+			width: 90%;
+			margin-right: 10%;
+			margin-left: 7%;
+		}
+		.circu {
+			    margin: 0px 5px;
+		}
+
+		/*PORFOLIO*/
+		.photos {
+			width: 800px;
+			margin: 10px;
+		}
+		.photos>div {
+			height: 180px;
+			width: 240px;
+		}
+}	
+
+/*Dispositivo mediano horizonal*/
+@media (max-width: 992px)  and (orientation: landscape){
+	/*INDEX*/
+		#h1 { 
+			position: relative;
+			margin-top: 100px; }
+
+		#parrafo {
+			margin-top: 3%;
+			div {
+				height: 6.5rem
+			}
+			}
+
+		/*MENUS*/
+		.menuContainer {
+			visibility: hidden;
+		}
+
+		div #links {
+			position: absolute;
+			width: 100%;
+			display: flex;
+			margin-top: -33px;
+			justify-content: center;
+		
+			ul {
+				display: flex;
+				justify-content: space-between;
+				}
+			li {
+				padding: 10px 12px;
+				}
+			}
+
+		/*EDUCACION Y EXPERIENCIA*/
+		#DivLogos {
+			width: 90%;
+			margin-top: 10%;
+			margin-left: 2%;
+		}
+		#descripcion {
+			position: relative;
+			width: 90%;
+			margin: 2% 0% 5% 7%;
+		}
+		#info {
+			width: 90%;
+			margin-left: 4%;
+		}
+
+		/*PORFOLIO*/
+		.photos {
+		    width: 100%;
+		    margin: 3px;
+		}
+		.photos>div {
+			height: 150px;
+			width: 210px;
+		}
+
+}
+
+/*Dispositivo pequeños horizontal*/
+@media (max-width: 768px) and (orientation: landscape)  {}
+/***************ESTE HEREDA EL DE ARRIBA********/
+
+/*Dispositivo pequeños vertical*/
+@media (max-width: 768px) and (orientation: portrait)  {
+	html {
+		margin: 0px 10%;
+	}
+
+	
+
+			/*INDEX*/
+		#parrafo {
+			margin-top: 3%;
+			width: 100%;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+    		justify-content: space-around;
+
+				div {
+						height: 6.5rem;
+						width: 30%;
+					}
+				a {margin: auto;}
+
+				p {
+					text-align: center;
+
+					&:first-letter {
+						font-size: 200%;
+					}	}
+									}	
+
+		h1,h3 {
+			margin: 0px;
+			text-align: center;
+		}
+		h2 {display: none}
+
+		#imagen {
+			position: relative;
+			width: 80%;
+			margin: 5%;
+						
+				img {margin: auto 5%;}
+		}
+
+		#texto1 {
+			float: left;
+			margin: auto;
+			width: 100%;
+						h4 {
+							font-size: 30px;
+							text-align: center;
+						}
+		}
+		/*MENU*/
+		.menuContainer {
+			visibility: hidden;
+
+		}
+		.menulessContainer {
+			visibility: visible;
+		}
+
+			div #links {
+			margin: auto;
+			position: relative;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		
+			ul {
+				display: flex;
+				justify-content: space-between;
+				}
+			li {
+
+				}
+			}
+
+
+
+		#boton {
+			margin-bottom: 3%;
+		}
+		/*RESUMEN*/
+		#descripcion{
+				width: 100%;
+				margin: auto;
+			}	
+		/*EDUCACION Y EXPERIENCIA*/
+		#DivLogos {
+			width: 100%;
+			margin: 5% auto;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		#info {
+			width: 100%;
+    		margin-left: 0%;
+    		margin-top: auto;
+		}
+
+		h5 {
+			display: none;
+		}
+		/*HABILIDADES*/
+
+		#contenedorHab {
+			width: 105%;
+			margin: 0%;
+		}
+
+
+		/*PORFOLIO*/
+		.photos {
+		    width: 100%;
+		    margin: 3px;
+		}
+		.photos>div {
+			height: 130px;
+			width: 190px;
+		}
+
+
+}
+
+
+/*Dispositivo muy pequeños vertical*/
+
+@media (max-width: 628px) and (orientation: portrait)  {
+	.circu {
+		display: none;
+	}
+	#contenedorHab {
+		position: absolute;
+		margin-left: -5%
+
+	}
+	#contenedorHab:after {
+		content: url('../images/habilidades.jpg');
+		width: 100%;
+		height: auto;
+
+	}
+	
+	.logos {
+		min-width: 70px;
+		height: 70px;
+		img {
+			width: 70px;
+			height: 70px;
+		}
+	}
+}
+
+
+@media (max-width: 560px) and (orientation: portrait)  {
+			
+			#links a {
+				font-size: 14px;
+			}
+
+}
+
+
+@media (max-width: 507px) and (orientation: portrait)  {
+			
+			#links a {
+				font-size: 11px;
+			}
+
+}
+
+@media (max-width: 375px) and (orientation: portrait)  {
+			
+			#links a {
+				font-size: 10px;
+			}
+
+}
+
+
+
+
